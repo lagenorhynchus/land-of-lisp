@@ -12,7 +12,7 @@
 (+ 1 1.0)
 
 (expt 53 53)
-
+
 (/ 4 6)
 
 (/ 4.0 6)
@@ -50,9 +50,9 @@
 (first '(beef chicken))
 
 (first (rest '(pork beef chicken)))
-(-> '(pork beef chicken)
-    rest
-    first)
+(->> '(pork beef chicken)
+     rest
+     first)
 
 (list 'pork 'beef 'chicken)
 
@@ -63,26 +63,26 @@
 (rest '(peas carrots tomatoes))
 
 (rest (first '((peas carrots tomatoes) (pork beef chicken))))
-(-> '((peas carrots tomatoes) (pork beef chicken))
-    first
-    rest)
+(->> '((peas carrots tomatoes) (pork beef chicken))
+     first
+     rest)
 
 (cons (cons 'peas (cons 'carrots (cons 'tomatoes ())))
       (cons (cons 'pork (cons 'beef (cons 'chicken ()))) ()))
 
-(-> '((peas carrots tomatoes) (pork beef chicken) duck)
-    rest
-    rest)
-(-> '((peas carrots tomatoes) (pork beef chicken) duck)
-    rest
-    rest
-    first)
-(-> '((peas carrots tomatoes) (pork beef chicken) duck)
-    first
-    rest
-    rest)
-(-> '((peas carrots tomatoes) (pork beef chicken) duck)
-    rest
-    first
-    rest
-    first)
+(->> '((peas carrots tomatoes) (pork beef chicken) duck)
+     rest
+     rest)
+(->> '((peas carrots tomatoes) (pork beef chicken) duck)
+     rest
+     rest
+     first)
+(->> '((peas carrots tomatoes) (pork beef chicken) duck)
+     first
+     rest
+     rest)
+(->> '((peas carrots tomatoes) (pork beef chicken) duck)
+     rest
+     first
+     rest
+     first)
