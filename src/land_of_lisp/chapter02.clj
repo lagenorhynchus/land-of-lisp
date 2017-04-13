@@ -1,4 +1,4 @@
-(ns chapter02)
+(ns land-of-lisp.chapter02)
 
 ;;;; 2.2
 

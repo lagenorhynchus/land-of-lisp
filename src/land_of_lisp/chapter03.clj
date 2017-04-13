@@ -1,4 +1,4 @@
-(ns chapter03
+(ns land-of-lisp.chapter03
   (:require [clojure.math.numeric-tower :refer [expt]]))
 
 ;;;; 3.2
